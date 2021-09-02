@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "facebook-clone",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

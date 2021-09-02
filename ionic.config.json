@@ -1,0 +1,7 @@
+{
+  "name": "facebook-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
