@@ -5,26 +5,76 @@ ion-header {
 }
 
 ion-toolbar {
-    // --background: #4267B2 !important;
+    --background: #4267B2 !important;
     font-size: 75px;
     height: 100%;
-    border: 1px solid black;
 
     ion-icon {
-        border: 1px solid black;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 12%;
+        margin-top: 16%;
+        color: white;
     }
 }
 
 ion-grid {
-    border: 1px solid black;
-    margin-top: 45px;
+    margin-top: 35px;
 
     ion-row {
-        border: 1px solid red;
+        border: 1px solid rgba(137, 143, 156, .4);
+        border-radius: 2px;
+        opacity: 5;
         height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        ion-input {
+            --placeholder-opacity: .4;
+        }
     }
+}
+
+.ion-button-login {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    height: 40px;
+    --background: rgba(66, 103, 178);
+    --border-radius: 6px;
+}
+
+.ion-button-forget-pwassword,
+.ion-button-back {
+    height: 30px;
+    --color: #4267B2;
+}
+
+h5 {
+    width: 60%;
+    text-align: center;
+    border-bottom: 1px solid #898F9C;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-left: 80px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #898F9C;
+
+    span {
+        background: #fff;
+        padding: 0 10px;
+    }
+}
+
+.ion-button-create-account {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 30px;
+    height: 40px;
+    font-weight: 700;
+    color: black;
+    --opacity: 0.3;
+    --border-radius: 6px;
+    --background: rgba(66, 103, 178, .4);
 }

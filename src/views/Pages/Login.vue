@@ -9,20 +9,25 @@
         <ion-content>
             <ion-grid>
                 <ion-row>
-                    <ion-col><ion-input placeholder="Phone number or email"></ion-input></ion-col>
+                    <ion-col>
+                        <ion-input placeholder="Phone number or email"></ion-input>
+                    </ion-col>
                 </ion-row>
                 <ion-row>
-                    <ion-col><ion-input placeholder="Password"></ion-input></ion-col>
+                    <ion-col>
+                        <ion-input placeholder="Password"></ion-input>
+                    </ion-col>
                 </ion-row>
             </ion-grid>
-            <ion-button expand="full">Log In</ion-button>
-            <ion-button fill="clear" expand="full">Forgot Password?</ion-button>
-            <ion-button fill="clear" expand="full">Back</ion-button>
+
+            <ion-button class="ion-button-login" expand="block">Log In</ion-button>
+            <ion-button class="ion-button-forget-pwassword" fill="clear" expand="full">Forgot Password?</ion-button>
+            <ion-button class="ion-button-back" fill="clear" expand="full">Back</ion-button>
         </ion-content>
 
         <ion-footer class="ion-no-border">
-                <ion-label>OR</ion-label>
-                <ion-button expand="full">Create New Account</ion-button>
+            <h5><span>OR</span></h5>
+            <ion-button class="ion-button-create-account" expand="block">Create New Account</ion-button>
         </ion-footer>
     </ion-page>
 </template>
@@ -40,7 +45,6 @@
         IonInput,
         IonButton,
         IonFooter,
-        IonLabel
     } from '@ionic/vue';
     export default {
         components: {
@@ -55,7 +59,6 @@
             IonInput,
             IonButton,
             IonFooter,
-            IonLabel
         },
         setup() {
             return {}
