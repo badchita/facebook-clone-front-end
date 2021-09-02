@@ -4,15 +4,38 @@
   </ion-app>
 </template>
 
-<script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'App',
-  components: {
+<script>
+  import {
     IonApp,
     IonRouterOutlet
-  }
-});
+  } from '@ionic/vue';
+  import {
+    defineComponent
+  } from 'vue';
+
+  import {
+    addIcons
+  } from 'ionicons';
+
+  import {
+    logoFacebook,
+  } from 'ionicons/icons';
+
+  addIcons({
+    'logo-facebook': logoFacebook,
+  })
+
+  export default defineComponent({
+    name: 'App',
+    components: {
+      IonApp,
+      IonRouterOutlet
+    }
+  });
 </script>
+
+<style lang="scss">
+  * {
+    font-family: Helvetica, sans-serif;
+  }
+</style>
