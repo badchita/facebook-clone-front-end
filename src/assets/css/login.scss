@@ -31,6 +31,10 @@ ion-grid {
 
         ion-input {
             --placeholder-opacity: .4;
+
+            ion-icon {
+                color: #898F9C;
+            }
         }
     }
 }
@@ -44,7 +48,7 @@ ion-grid {
     --border-radius: 6px;
 }
 
-.ion-button-forget-pwassword,
+.ion-button-forget-password,
 .ion-button-back {
     height: 30px;
     --color: #4267B2;

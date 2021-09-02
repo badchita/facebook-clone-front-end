@@ -10,18 +10,20 @@
             <ion-grid>
                 <ion-row>
                     <ion-col>
-                        <ion-input placeholder="Phone number or email"></ion-input>
+                        <ion-input v-model="login.email" placeholder="Phone number or email">
+                        </ion-input>
                     </ion-col>
                 </ion-row>
                 <ion-row>
                     <ion-col>
-                        <ion-input placeholder="Password"></ion-input>
+                        <ion-input placeholder="Password">
+                        </ion-input>
                     </ion-col>
                 </ion-row>
             </ion-grid>
 
-            <ion-button class="ion-button-login" expand="block">Log In</ion-button>
-            <ion-button class="ion-button-forget-pwassword" fill="clear" expand="full">Forgot Password?</ion-button>
+            <ion-button class="ion-button-login" expand="block" @click="redirectToTabs">Log In</ion-button>
+            <ion-button class="ion-button-forget-password" fill="clear" expand="full">Forgot Password?</ion-button>
             <ion-button class="ion-button-back" fill="clear" expand="full">Back</ion-button>
         </ion-content>
 
@@ -46,6 +48,12 @@
         IonButton,
         IonFooter,
     } from '@ionic/vue';
+    import {
+        ref
+    } from '@vue/reactivity';
+    import {
+        useRouter
+    } from 'vue-router';
     export default {
         components: {
             IonPage,
@@ -61,7 +69,32 @@
             IonFooter,
         },
         setup() {
-            return {}
+            const login = ref({
+                email: '',
+                password: ''
+            })
+
+            const router = useRouter();
+
+            function onClear() {
+                login.value.email = ''
+                login.value.password = ''
+            }
+
+            function clear() {
+                console.log('clear');
+                onClear()
+            }
+
+            function redirectToTabs() {
+                router.push(`/tabs/`)
+            }
+
+            return {
+                login,
+                redirectToTabs,
+                clear
+            }
         }
     }
 </script>

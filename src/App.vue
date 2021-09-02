@@ -19,10 +19,12 @@
 
   import {
     logoFacebook,
+    closeCircleOutline
   } from 'ionicons/icons';
 
   addIcons({
     'logo-facebook': logoFacebook,
+    'close-circle-outline': closeCircleOutline
   })
 
   export default defineComponent({
