@@ -57,6 +57,7 @@
         useRouter
     } from 'vue-router';
     export default {
+        name: 'LoginPage',
         components: {
             IonPage,
             IonHeader,

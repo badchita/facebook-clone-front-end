@@ -21,27 +21,27 @@ const routes = [{
       },
       {
         path: 'news-feed',
-        component: () => import('@/views/Tabs/Tab1.vue')
+        component: () => import('@/views/Tabs/NewsFeedTab.vue')
       },
       {
         path: 'watch',
-        component: () => import('@/views/Tabs/Tab2.vue')
+        component: () => import('@/views/Tabs/WatchTab.vue')
       },
       {
         path: 'marketplace',
-        component: () => import('@/views/Tabs/Tab3.vue')
+        component: () => import('@/views/Tabs/MarketPlaceTab.vue')
       },
       {
         path: 'groups',
-        component: () => import('@/views/Tabs/Tab3.vue')
+        component: () => import('@/views/Tabs/GroupsTab.vue')
       },
       {
         path: 'notifications',
-        component: () => import('@/views/Tabs/Tab3.vue')
+        component: () => import('@/views/Tabs/NotficationsTab.vue')
       },
       {
         path: 'menu',
-        component: () => import('@/views/Tabs/Tab3.vue')
+        component: () => import('@/views/Tabs/MenuTab.vue')
       }
     ]
   }
