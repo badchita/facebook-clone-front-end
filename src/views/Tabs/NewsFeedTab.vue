@@ -9,7 +9,7 @@
         <ion-row>
           <ion-col size="1.2">
             <ion-avatar>
-              <ion-img src="https://pickaface.net/gallery/avatar/unr_test_180821_0925_9k0pgs.png" />
+              <img src="@/assets/images/profile-picture.jpg" />
             </ion-avatar>
           </ion-col>
           <ion-col>
@@ -48,6 +48,20 @@
           </ion-slides>
         </ion-row>
       </ion-grid>
+
+      <ion-grid class="stories">
+        <ion-row>
+          <ion-card class="create-story" button>
+            <img src="@/assets/images/profile-picture.jpg" />
+            <ion-card-content>
+              <ion-button>
+                <ion-icon name="add-circle" />
+              </ion-button>
+              <ion-label>Create Story</ion-label>
+            </ion-card-content>
+          </ion-card>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
@@ -67,10 +81,14 @@
     IonLabel,
     IonSlide,
     IonSlides,
+    IonCard,
+    IonCardContent
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
-import { onMounted } from '@vue/runtime-core';
+  import {
+    onMounted
+  } from '@vue/runtime-core';
 
   export default {
     name: 'NewsFeedTab',
@@ -88,6 +106,8 @@ import { onMounted } from '@vue/runtime-core';
       IonLabel,
       IonSlide,
       IonSlides,
+      IonCard,
+      IonCardContent,
 
       MainHeader
     },
@@ -96,13 +116,13 @@ import { onMounted } from '@vue/runtime-core';
         slideOption
       })
       const slideOption = {
-          slidesPerView: 6,
-          speed: 400,
-        }
+        slidesPerView: 6,
+        speed: 400,
+      }
 
-        return {
-          slideOption
-        }
+      return {
+        slideOption
+      }
     }
   }
 </script>

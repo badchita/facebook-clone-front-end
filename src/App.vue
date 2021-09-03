@@ -39,7 +39,7 @@
     peopleCircle,
     notifications,
     videocam,
-    images
+    images,
   } from 'ionicons/icons';
 
   addIcons({

@@ -46,6 +46,7 @@ ion-avatar {
 
 .audio-video-rooms {
     background: $fb-white;
+    margin-bottom: 10px;
 
     .audio-video-rooms-title {
         margin-top: 8px;
@@ -68,5 +69,32 @@ ion-avatar {
 
     ion-slide {
         width: 100px;
+    }
+}
+
+.stories {
+    background: $fb-white;
+    margin-bottom: 10px;
+
+    .create-story {
+        height: 160px;
+        width: 100px;
+        margin-left: 10px;
+        box-shadow: none;
+
+        ion-card-content {
+            background: rgba(137, 143, 156, .2);
+            height: 60px;
+            overflow: visible;
+
+            ion-button {
+                margin-top: -70px;
+            }
+
+            ion-label {
+                border: 1px solid black;
+                margin-top: -10px
+            }
+        }
     }
 }
