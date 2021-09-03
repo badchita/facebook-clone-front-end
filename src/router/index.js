@@ -10,25 +10,37 @@ const routes = [{
   {
     path: '/login',
     name: 'login',
-    component: () => import('@/views/Pages/Login.vue'),
+    component: () => import('@/views/Pages/LoginPage.vue'),
   },
   {
     path: '/tabs/',
-    component: () => import('@/views/Pages/Tabs.vue'),
+    component: () => import('@/views/Pages/TabsPage.vue'),
     children: [{
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/tabs/news-feed'
       },
       {
-        path: 'tab1',
+        path: 'news-feed',
         component: () => import('@/views/Tabs/Tab1.vue')
       },
       {
-        path: 'tab2',
+        path: 'watch',
         component: () => import('@/views/Tabs/Tab2.vue')
       },
       {
-        path: 'tab3',
+        path: 'marketplace',
+        component: () => import('@/views/Tabs/Tab3.vue')
+      },
+      {
+        path: 'groups',
+        component: () => import('@/views/Tabs/Tab3.vue')
+      },
+      {
+        path: 'notifications',
+        component: () => import('@/views/Tabs/Tab3.vue')
+      },
+      {
+        path: 'menu',
         component: () => import('@/views/Tabs/Tab3.vue')
       }
     ]
