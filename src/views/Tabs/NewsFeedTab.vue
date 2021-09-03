@@ -39,7 +39,7 @@
         </ion-row>
         <ion-row>
           <ion-slides :options="slideOption">
-            <ion-button>Create Room</ion-button>
+              <ion-button>Create Room</ion-button>
             <ion-slide v-for="(item,i) in 10" :key="i">
               <ion-avatar>
                 <ion-img src="https://pickaface.net/gallery/avatar/unr_test_180821_0925_9k0pgs.png" />
@@ -51,15 +51,29 @@
 
       <ion-grid class="stories">
         <ion-row>
-          <ion-card class="create-story" button>
-            <img src="@/assets/images/profile-picture.jpg" />
-            <ion-card-content>
-              <div class="ion-icon-container">
-              <ion-icon name="add-circle" slot="icon-only" size="large" />
-              </div>
-              <ion-label>Create Story</ion-label>
-            </ion-card-content>
-          </ion-card>
+          <ion-slides :options="slideOptionStories">
+            <ion-slide>
+              <ion-card class="create-story" button>
+                <img src="@/assets/images/profile-picture.jpg" />
+                <ion-card-content>
+                  <div class="ion-icon-container">
+                    <ion-icon name="add-circle" slot="icon-only" size="large" />
+                  </div>
+                  <ion-label>Create Story</ion-label>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+            <ion-slide v-for="(item,i) in 10" :key="i">
+              <ion-card class="friends-stories" button>
+                <ion-card-content>
+                  <div class="ion-icon-container">
+                    <ion-icon name="add-circle" slot="icon-only" size="large" />
+                  </div>
+                  <ion-label>Create Story</ion-label>
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>
         </ion-row>
       </ion-grid>
     </ion-content>
@@ -116,12 +130,18 @@
         slideOption
       })
       const slideOption = {
+        initialSlide: 0,
         slidesPerView: 6,
+        speed: 400,
+      }
+      const slideOptionStories = {
+        slidesPerView: 3,
         speed: 400,
       }
 
       return {
-        slideOption
+        slideOption,
+        slideOptionStories
       }
     }
   }

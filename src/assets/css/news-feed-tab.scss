@@ -66,15 +66,21 @@ ion-avatar {
         --background: rgba(56, 128, 255, .2);
         --background-activated: rgba(56, 128, 255, .1) !important;
     }
-
-    ion-slide {
-        width: 100px;
-    }
 }
 
 .stories {
     background: $fb-white;
     margin-bottom: 10px;
+
+    .friends-stories {
+        height: 170px;
+        width: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: none;
+        border-radius: 12px;
+    }
 
     .create-story {
         height: 170px;
@@ -116,4 +122,6 @@ ion-avatar {
             }
         }
     }
+
+    .friends-stories {}
 }
