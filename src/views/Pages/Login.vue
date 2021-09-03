@@ -7,20 +7,22 @@
         </ion-header>
 
         <ion-content>
-            <ion-grid>
-                <ion-row>
-                    <ion-col>
-                        <ion-input v-model="login.email" placeholder="Phone number or email">
+            <ion-list>
+                <ion-item lines="none">
+                    <ion-input v-model="login.email" placeholder="Phone number or email" slot>
+                    </ion-input>
+                    <ion-button fill="clear">
+                        <ion-icon slot="end" name="close-circle-outline" />
+                    </ion-button>
+                </ion-item>
+                <ion-item lines="none">
+                    <ion-input v-model="login.password" placeholder="Password" type="password">
                         </ion-input>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <ion-input placeholder="Password">
-                        </ion-input>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+                    <ion-button fill="clear">
+                        <ion-icon slot="end" name="close-circle-outline" />
+                    </ion-button>
+                </ion-item>
+            </ion-list>
 
             <ion-button class="ion-button-login" expand="block" @click="redirectToTabs">Log In</ion-button>
             <ion-button class="ion-button-forget-password" fill="clear" expand="full">Forgot Password?</ion-button>
@@ -41,12 +43,11 @@
         IonToolbar,
         IonContent,
         IonIcon,
-        IonGrid,
-        IonRow,
-        IonCol,
         IonInput,
         IonButton,
         IonFooter,
+        IonItem,
+        IonList
     } from '@ionic/vue';
     import {
         ref
@@ -61,12 +62,11 @@
             IonContent,
             IonToolbar,
             IonIcon,
-            IonGrid,
-            IonRow,
-            IonCol,
             IonInput,
             IonButton,
             IonFooter,
+            IonItem,
+            IonList
         },
         setup() {
             const login = ref({

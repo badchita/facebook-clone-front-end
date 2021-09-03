@@ -18,6 +18,29 @@ ion-toolbar {
     }
 }
 
+ion-list {
+    margin-top: 35px;
+    margin-bottom: 10px;
+
+    ion-item {
+        border: 1px solid rgba(137, 143, 156, .4);
+        border-radius: 2px;
+        opacity: 5;
+        height: 40px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+
+        ion-input {
+            --placeholder-opacity: .3;
+        }
+
+        ion-icon {
+            color: #898F9C;
+        }
+    }
+}
+
 ion-grid {
     margin-top: 35px;
 
