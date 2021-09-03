@@ -32,7 +32,12 @@
     search,
     person,
     settings,
-    addCircle
+    addCircle,
+    home,
+    playCircle,
+    storefront,
+    peopleCircle,
+    notifications
   } from 'ionicons/icons';
 
   addIcons({
@@ -51,6 +56,11 @@
     'person': person,
     'settings': settings,
     'add-circle': addCircle,
+    'home': home,
+    'play-circle': playCircle,
+    'storefront': storefront,
+    'people-circle': peopleCircle,
+    'notifications': notifications
   })
 
   export default defineComponent({
