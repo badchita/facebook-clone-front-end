@@ -1,20 +1,17 @@
 ion-content {
-    --background: #898F9C;
+    --background: rgba(137, 143, 156, .7);
 }
 
 .create-status-grid {
     background: $fb-white;
-
-    ion-avatar {
-        height: 45px;
-        width: 45px;
-        --border-radius: 50%;
-    }
+    margin-bottom: 10px;
 
     .whats-on-your-mind-button {
+        margin-top: -4px;
         font-size: 16px;
         opacity: .8;
         --color: #000000;
+        --background-activated: rgba(0, 0, 0, .1) !important;
     }
 
     .button-row {
@@ -39,4 +36,15 @@ ion-content {
             }
         }
     }
+}
+
+ion-avatar {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    --border-radius: 50%;
+}
+
+.audio-video-rooms {
+    background: $fb-white;
 }
