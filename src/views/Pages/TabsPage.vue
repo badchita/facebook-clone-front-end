@@ -134,6 +134,6 @@
 </script>
 
 <style lang="scss" scoped>
-  @import '@/assets/css/tabs.scss';
   @import '@/assets/css/variables.scss';
+  @import '@/assets/css/tabs.scss';
 </style>

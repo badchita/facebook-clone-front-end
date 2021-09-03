@@ -1,0 +1,13 @@
+ion-content {
+    --background: #898F9C;
+}
+
+.create-status-grid {
+    background: $fb-white;
+
+    ion-avatar {
+        height: 45px;
+        width: 45px;
+        --border-radius: 50%;
+    }
+}
