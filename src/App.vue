@@ -37,7 +37,9 @@
     playCircle,
     storefront,
     peopleCircle,
-    notifications
+    notifications,
+    videocam,
+    images
   } from 'ionicons/icons';
 
   addIcons({
@@ -60,7 +62,9 @@
     'play-circle': playCircle,
     'storefront': storefront,
     'people-circle': peopleCircle,
-    'notifications': notifications
+    'notifications': notifications,
+    'videocam': videocam,
+    'images': images,
   })
 
   export default defineComponent({

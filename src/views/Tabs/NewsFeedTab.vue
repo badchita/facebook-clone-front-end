@@ -7,25 +7,25 @@
     <ion-content>
       <ion-grid class="create-status-grid">
         <ion-row>
-          <ion-col size="1.7">
+          <ion-col size="1.2">
             <ion-avatar>
               <ion-img src="https://pickaface.net/gallery/avatar/unr_test_180821_0925_9k0pgs.png" />
             </ion-avatar>
           </ion-col>
           <ion-col>
-            <ion-button fill="clear">What's on your mind?</ion-button>
+            <ion-button class="whats-on-your-mind-button" fill="clear">What's on your mind?</ion-button>
           </ion-col>
         </ion-row>
 
-        <ion-row>
+        <ion-row class="button-row">
           <ion-col>
-            <ion-button fill="clear">Live</ion-button>
+            <ion-button fill="clear"><ion-icon name='videocam' color="danger"/>Live</ion-button>
           </ion-col>
           <ion-col>
-            <ion-button fill="clear">Photo</ion-button>
+            <ion-button fill="clear"><ion-icon name='images' color="success"/>Photo</ion-button>
           </ion-col>
           <ion-col>
-            <ion-button fill="clear">Room</ion-button>
+            <ion-button fill="clear"><ion-icon name='videocam' color="tertiary"/>Room</ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -44,6 +44,7 @@
     IonAvatar,
     IonImg,
     IonButton,
+    IonIcon,
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
@@ -60,6 +61,7 @@
       IonAvatar,
       IonImg,
       IonButton,
+      IonIcon,
 
       MainHeader
     }
