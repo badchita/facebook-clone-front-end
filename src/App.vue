@@ -27,7 +27,12 @@
     menuOutline,
     notificationsOutline,
     searchOutline,
-    chatbubbleEllipsesOutline
+    chatbubbleEllipsesOutline,
+    chatbubbleEllipses,
+    search,
+    person,
+    settings,
+    addCircle
   } from 'ionicons/icons';
 
   addIcons({
@@ -40,7 +45,12 @@
     'menu-outline': menuOutline,
     'notifications-outline': notificationsOutline,
     'search-outline': searchOutline,
-    'chatbubble-ellipses-outline': chatbubbleEllipsesOutline
+    'chatbubble-ellipses-outline': chatbubbleEllipsesOutline,
+    'chatbubble-ellipses': chatbubbleEllipses,
+    'search': search,
+    'person': person,
+    'settings': settings,
+    'add-circle': addCircle,
   })
 
   export default defineComponent({

@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header>
-      <MainHeader />
+      <MainHeader :title="'facebook'"/>
     </ion-header>
 
     <ion-content :fullscreen="true">

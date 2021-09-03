@@ -1,0 +1,36 @@
+.news-feed-title {
+    color: $fb-blue;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.other-title {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+ion-item {
+    overflow: visible;
+}
+
+ion-label {
+    color: #000000;
+    margin-left: -16px;
+}
+
+.search-button,
+.message-button,
+.person-button,
+.add-circle-button,
+.settings-button {
+    --background: rgba(137, 143, 156, .3) !important;
+    --border-radius: 50%;
+    --background-activated: rgba(137, 143, 156, .1) !important;
+    height: 35px;
+    width: 35px;
+
+    ion-icon {
+        color: #000000;
+    }
+}

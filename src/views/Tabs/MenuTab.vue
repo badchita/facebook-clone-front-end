@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header>
-      <MainHeader />
+      <MainHeader :title="'Menu'"/>
     </ion-header>
     <ion-content :fullscreen="true">
       <ExploreContainer name="Menu" />

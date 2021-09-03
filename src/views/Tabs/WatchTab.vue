@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header>
-      <MainHeader />
+      <MainHeader :title="'Watch'"/>
     </ion-header>
     <ion-content :fullscreen="true">
 
