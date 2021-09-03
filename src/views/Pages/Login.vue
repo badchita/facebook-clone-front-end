@@ -9,16 +9,17 @@
         <ion-content>
             <ion-list>
                 <ion-item lines="none">
-                    <ion-input v-model="login.email" placeholder="Phone number or email" slot>
+                    <ion-input @ionChange="onChangeEmail($event)" v-model="login.email"
+                        placeholder="Phone number or email" slot>
                     </ion-input>
-                    <ion-button fill="clear">
+                    <ion-button v-if="showClearEmail" @click="onClearEmail"  fill="clear">
                         <ion-icon slot="end" name="close-circle-outline" />
                     </ion-button>
                 </ion-item>
                 <ion-item lines="none">
-                    <ion-input v-model="login.password" placeholder="Password" type="password">
-                        </ion-input>
-                    <ion-button fill="clear">
+                    <ion-input @ionChange="onChangePassword($event)" v-model="login.password" placeholder="Password" type="password">
+                    </ion-input>
+                    <ion-button v-if="showClearPassword" @click="onClearPassword" fill="clear">
                         <ion-icon slot="end" name="close-circle-outline" />
                     </ion-button>
                 </ion-item>
@@ -74,26 +75,49 @@
                 password: ''
             })
 
+            let showClearEmail = ref(false)
+            let showClearPassword = ref(false)
+
             const router = useRouter();
 
-            function onClear() {
+            function clearEmail() {
                 login.value.email = ''
+            }
+
+            function clearPassword() {
                 login.value.password = ''
             }
 
-            function clear() {
-                console.log('clear');
-                onClear()
+            function onClearEmail() {
+                clearEmail()
+                showClearEmail.value = false
+            }
+            function onClearPassword() {
+                clearPassword()
+                showClearPassword = false
             }
 
             function redirectToTabs() {
                 router.push(`/tabs/`)
             }
 
+            function onChangeEmail(ev) {
+                ev.detail !== '' ? showClearEmail.value = true : showClearEmail.value = false
+            }
+
+            function onChangePassword(ev) {
+                ev.detail !== '' ? showClearPassword.value = true : showClearPassword.value = false
+            }
+
             return {
                 login,
                 redirectToTabs,
-                clear
+                onClearEmail,
+                onClearPassword,
+                showClearEmail,
+                onChangeEmail,
+                onChangePassword,
+                showClearPassword
             }
         }
     }
