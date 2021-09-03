@@ -73,6 +73,7 @@
 </script>
 
 <style lang="scss">
+  @import '@/assets/css/variables.scss';
   * {
     font-family: Helvetica, sans-serif;
   }

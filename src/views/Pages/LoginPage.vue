@@ -12,12 +12,13 @@
                     <ion-input @ionChange="onChangeEmail($event)" v-model="login.email"
                         placeholder="Phone number or email" slot>
                     </ion-input>
-                    <ion-button v-if="showClearEmail" @click="onClearEmail"  fill="clear">
+                    <ion-button v-if="showClearEmail" @click="onClearEmail" fill="clear">
                         <ion-icon slot="end" name="close-circle-outline" />
                     </ion-button>
                 </ion-item>
                 <ion-item lines="none">
-                    <ion-input @ionChange="onChangePassword($event)" v-model="login.password" placeholder="Password" type="password">
+                    <ion-input @ionChange="onChangePassword($event)" v-model="login.password" placeholder="Password"
+                        type="password">
                     </ion-input>
                     <ion-button v-if="showClearPassword" @click="onClearPassword" fill="clear">
                         <ion-icon slot="end" name="close-circle-outline" />
@@ -93,6 +94,7 @@
                 clearEmail()
                 showClearEmail.value = false
             }
+
             function onClearPassword() {
                 clearPassword()
                 showClearPassword = false
@@ -125,6 +127,6 @@
 </script>
 
 <style lang="scss" scoped>
-    @import '@/assets/css/login.scss';
     @import '@/assets/css/variables.scss';
+    @import '@/assets/css/login.scss';
 </style>

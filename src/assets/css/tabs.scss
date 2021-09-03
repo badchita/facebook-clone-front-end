@@ -3,5 +3,9 @@ ion-label {
 }
 
 ion-icon {
-    font-size: 25px;
+    font-size: 26px;
+}
+
+ion-tab-button[aria-selected=true] {
+    box-shadow: 0 2px 0 0 #488aff inset;
 }
