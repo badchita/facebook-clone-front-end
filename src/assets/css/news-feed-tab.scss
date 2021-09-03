@@ -77,23 +77,42 @@ ion-avatar {
     margin-bottom: 10px;
 
     .create-story {
-        height: 160px;
+        height: 170px;
         width: 100px;
         margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         box-shadow: none;
+        border-radius: 12px;
 
         ion-card-content {
-            background: rgba(137, 143, 156, .2);
-            height: 60px;
+            background: rgba(220, 220, 220, .2);
             overflow: visible;
+            text-align: center;
 
-            ion-button {
-                margin-top: -70px;
+            .ion-icon-container {
+                background: white;
+                border-radius: 50%;
+                height: 32px;
+                width: 32px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -40px;
+
+                ion-icon {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: $fb-blue;
+                    --background: #ffffff;
+                }
             }
 
             ion-label {
-                border: 1px solid black;
-                margin-top: -10px
+                font-size: 14px;
+                font-weight: 700;
+                margin-top: -12px
             }
         }
     }

@@ -54,9 +54,9 @@
           <ion-card class="create-story" button>
             <img src="@/assets/images/profile-picture.jpg" />
             <ion-card-content>
-              <ion-button>
-                <ion-icon name="add-circle" />
-              </ion-button>
+              <div class="ion-icon-container">
+              <ion-icon name="add-circle" slot="icon-only" size="large" />
+              </div>
               <ion-label>Create Story</ion-label>
             </ion-card-content>
           </ion-card>
