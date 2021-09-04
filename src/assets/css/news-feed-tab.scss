@@ -1,11 +1,15 @@
 ion-content {
-    --background: rgba(137, 143, 156, .7);
+    --background: rgba(137, 143, 156, .5);
+}
+
+.create-status-grid,
+.audio-video-rooms,
+.stories {
+    background: $fb-white;
+    margin-bottom: 6px;
 }
 
 .create-status-grid {
-    background: $fb-white;
-    margin-bottom: 8px;
-
     .whats-on-your-mind-button {
         margin-top: -4px;
         font-size: 16px;
@@ -45,9 +49,6 @@ ion-avatar {
 }
 
 .audio-video-rooms {
-    background: $fb-white;
-    margin-bottom: 8px;
-
     .audio-video-rooms-title {
         margin-top: 8px;
         margin-bottom: 8px;
@@ -69,9 +70,6 @@ ion-avatar {
 }
 
 .stories {
-    background: $fb-white;
-    margin-bottom: 10px;
-
     .friends-stories {
         height: 170px;
         width: 100px;
