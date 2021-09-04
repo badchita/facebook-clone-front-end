@@ -39,7 +39,7 @@
         </ion-row>
         <ion-row>
           <ion-slides :options="slideOption">
-              <ion-button>Create Room</ion-button>
+            <ion-button>Create Room</ion-button>
             <ion-slide v-for="(item,i) in 10" :key="i">
               <ion-avatar>
                 <ion-img src="https://pickaface.net/gallery/avatar/unr_test_180821_0925_9k0pgs.png" />
@@ -74,6 +74,56 @@
               </ion-card>
             </ion-slide>
           </ion-slides>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid class="posts">
+        <ion-row class="post-details">
+          <ion-col>
+            <ion-avatar><img src="@/assets/images/profile-picture.jpg" /></ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-label>Vr Bachita</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <ion-icon name="ellipsis-horizontal" />
+            </ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label>13m</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <ion-icon name="people" />
+            </ion-label>
+          </ion-col>
+        </ion-row>
+        <ion-row class="post-image">
+          <img src="@/assets/images/profile-picture.jpg" />
+        </ion-row>
+        <ion-row class="reacts-comments">
+          <ion-col>
+            <ion-icon name="thumbs-up-sharp" />
+          </ion-col>
+          <ion-col>
+            <ion-icon name="heart-circle-sharp" />
+          </ion-col>
+          <ion-col>3 Comments</ion-col>
+        </ion-row>
+        <ion-row class="react-comment-share">
+          <ion-col>
+            <ion-icon name="thumbs-up-outline" />
+            Like
+          </ion-col>
+          <ion-col>
+            <ion-icon name="chatbox-outline" />
+            Comment
+          </ion-col>
+          <ion-col>
+            <ion-icon name="arrow-redo-outline" />
+            Share
+          </ion-col>
         </ion-row>
       </ion-grid>
     </ion-content>
@@ -150,4 +200,5 @@
 <style lang="scss" scoped>
   @import '@/assets/css/variables.scss';
   @import '@/assets/css/news-feed-tab.scss';
+  @import '@/assets/css/global.scss';
 </style>

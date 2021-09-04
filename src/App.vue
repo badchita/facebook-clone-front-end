@@ -40,6 +40,13 @@
     notifications,
     videocam,
     images,
+    ellipsisHorizontal,
+    people,
+    thumbsUpSharp,
+    heartCircleSharp,
+    thumbsUpOutline,
+    chatboxOutline,
+    arrowRedoOutline,
   } from 'ionicons/icons';
 
   addIcons({
@@ -65,6 +72,13 @@
     'notifications': notifications,
     'videocam': videocam,
     'images': images,
+    'ellipsis-horizontal': ellipsisHorizontal,
+    'people': people,
+    'thumbs-up-sharp': thumbsUpSharp,
+    'heart-circle-sharp': heartCircleSharp,
+    'thumbs-up-outline': thumbsUpOutline,
+    'chatbox-outline': chatboxOutline,
+    'arrow-redo-outline': arrowRedoOutline,
   })
 
   export default defineComponent({

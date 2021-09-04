@@ -4,7 +4,7 @@ ion-content {
 
 .create-status-grid {
     background: $fb-white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     .whats-on-your-mind-button {
         margin-top: -4px;
@@ -46,7 +46,7 @@ ion-avatar {
 
 .audio-video-rooms {
     background: $fb-white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     .audio-video-rooms-title {
         margin-top: 8px;
@@ -124,4 +124,9 @@ ion-avatar {
     }
 
     .friends-stories {}
+}
+
+.posts {
+    background: $fb-white;
+    margin-bottom: 10px;
 }
