@@ -12,7 +12,25 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-
+      <ion-grid class="new-for-you-grid">
+        <ion-row>
+          <ion-col>New for You</ion-col>
+          <ion-col>See All(2)</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="@/assets/images/friend-picture.jpg" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col>
+            <ion-label>Maria Pico and others shared videos.</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="ellipsis-horizontal"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
@@ -24,11 +42,13 @@
     IonContent,
     IonSegment,
     IonSegmentButton,
-    // IonGrid,
-    // IonRow,
-    //     IonCol
+    IonGrid,
+    IonRow,
+    IonCol,
     IonLabel,
     IonToolbar,
+    IonAvatar,
+    IonIcon,
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
@@ -45,10 +65,12 @@
       IonSegment,
       IonSegmentButton,
       IonToolbar,
-      // IonGrid,
-      // IonRow,
-      // IonCol
+      IonGrid,
+      IonRow,
+      IonCol,
       IonLabel,
+      IonAvatar,
+      IonIcon,
 
       MainHeader
     },
