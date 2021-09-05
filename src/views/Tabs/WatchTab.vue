@@ -2,14 +2,17 @@
   <ion-page>
     <ion-header>
       <MainHeader :title="'Watch'" />
+      <ion-toolbar class="watch-toolbar">
+        <ion-segment :value="activeSegment" scrollable mode="md" @ionChange="onSegmentChange($event)">
+          <ion-segment-button v-for="(category, i) in categories" :key="i" :value="category.value" mode="ios"
+            @click="onSegmentButtonClick($event)">
+            <ion-label>{{category.value}}</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-segment :value="activeSegment" scrollable mode="md" @ionChange="onSegmentChange($event)">
-        <ion-segment-button v-for="(category, i) in categories" :key="i" :value="category.value" mode="ios"
-          @click="onSegmentButtonClick($event)">
-          <ion-label>{{category.value}}</ion-label>
-        </ion-segment-button>
-      </ion-segment>
+
     </ion-content>
   </ion-page>
 </template>
@@ -25,6 +28,7 @@
     // IonRow,
     //     IonCol
     IonLabel,
+    IonToolbar,
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
@@ -40,6 +44,7 @@
       IonPage,
       IonSegment,
       IonSegmentButton,
+      IonToolbar,
       // IonGrid,
       // IonRow,
       // IonCol
@@ -88,3 +93,8 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+  @import '@/assets/css/variables.scss';
+  @import '@/assets/css/watch-tab.scss';
+</style>

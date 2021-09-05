@@ -1,0 +1,26 @@
+ion-content {
+    --background: rgba(137, 143, 156, .5);
+}
+
+.watch-toolbar {
+    margin-top: -8px;
+}
+
+ion-segment {
+    height: 50px;
+
+    ion-segment-button {
+        height: 35px;
+        min-height: 35px;
+        margin-top: 2px;
+        margin-bottom: auto;
+        font-weight: 500;
+        font-size: 14px;
+        --border-radius: 90px !important;
+        --border-style: none;
+        --color: #000000;
+        --color-checked: #4267B2;
+        --indicator-color: rgba(56, 128, 255, .2) !important;
+        --indicator-box-shadow: none;
+    }
+}
