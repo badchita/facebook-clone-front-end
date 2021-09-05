@@ -3,7 +3,7 @@
         <ion-item lines="none">
             <ion-label v-if="title === 'facebook'" class="news-feed-title">{{title}}</ion-label>
             <ion-label v-else class="other-title">{{title}}</ion-label>
-
+            
             <ion-button v-if="title === 'Groups'" class="add-circle-button">
                 <ion-icon slot="icon-only" name="add-circle"></ion-icon>
             </ion-button>

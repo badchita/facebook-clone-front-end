@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <ion-header v-show="scrolling === false">
+    <ion-header>
       <MainHeader :title="'facebook'" />
     </ion-header>
 

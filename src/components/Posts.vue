@@ -26,7 +26,7 @@
         </ion-row>
         <ion-row class="reacts-comments">
             <ion-col size=".4">
-                <ion-icon color="primary" src="thumbs-up-sharp" />
+                <ion-icon color="primary" name="thumbs-up-sharp" />
             </ion-col>
             <ion-col size=".6">
                 <ion-icon color="danger" name="heart-circle-sharp" />
