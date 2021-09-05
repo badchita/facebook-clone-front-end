@@ -14,23 +14,27 @@
     <ion-content>
       <ion-grid class="new-for-you-grid">
         <ion-row>
-          <ion-col>New for You</ion-col>
-          <ion-col>See All(2)</ion-col>
+          <ion-col class="new-for-you-title" size="9.5">New for You</ion-col>
+          <ion-col><ion-text>See All (2)</ion-text></ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col size="1.8">
             <ion-avatar>
               <img src="@/assets/images/friend-picture.jpg" />
             </ion-avatar>
           </ion-col>
-          <ion-col>
+          <ion-col class="name-col" size="8">
             <ion-label>Maria Pico and others shared videos.</ion-label>
           </ion-col>
           <ion-col>
-            <ion-icon name="ellipsis-horizontal"/>
+            <ion-button fill="clear">
+            <ion-icon slot="icon-only" size="small" name="ellipsis-horizontal"/>
+            </ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
+
+       <Posts />
     </ion-content>
   </ion-page>
 </template>
@@ -49,9 +53,12 @@
     IonToolbar,
     IonAvatar,
     IonIcon,
+    IonText,
+    IonButton
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
+  import Posts from '@/components/Posts.vue'
   import {
     ref
   } from '@vue/reactivity';
@@ -71,8 +78,11 @@
       IonLabel,
       IonAvatar,
       IonIcon,
+      IonText,
+      IonButton,
 
-      MainHeader
+      MainHeader,
+      Posts
     },
     setup() {
       const categories = ([{
