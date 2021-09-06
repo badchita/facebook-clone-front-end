@@ -1,0 +1,25 @@
+ion-content {
+    --background: rgba(137, 143, 156, .5);
+}
+
+ion-item {
+    ion-button {
+        width: 50%;
+        height: 36px;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        --color: $fb-black;
+        --border-radius: 90px !important;
+        --background: rgba(137, 143, 156, .3);
+        --background-activated: rgba(137, 143, 156, .1);
+
+        ion-icon {
+            --ionicon-stroke-width: 50px;
+        }
+
+        ion-label {
+            margin-left: 2px;
+        }
+    }
+}

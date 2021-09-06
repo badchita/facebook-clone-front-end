@@ -3,21 +3,25 @@
     <ion-header>
       <MainHeader :title="'Marketplace'" />
       <ion-toolbar>
-        <ion-segment>
-          <ion-segment-button>
+        <ion-item lines="none">
+          <ion-button expand="block">
+            <ion-icon size="small" name="create-outline" />
             <ion-label>
-              <ion-icon name="create-outline" />
+              Sell
             </ion-label>
-          </ion-segment-button>
-          <ion-segment-button>
+          </ion-button>
+          <ion-button expand="block">
+            <ion-icon name="list" />
             <ion-label>
-              <ion-icon name="list" />
+              Categories
             </ion-label>
-          </ion-segment-button>
-        </ion-segment>
+          </ion-button>
+        </ion-item>
       </ion-toolbar>
     </ion-header>
     <ion-content>
+      <NewForYou />
+      <Posts />
     </ion-content>
   </ion-page>
 </template>
@@ -27,14 +31,19 @@
     IonPage,
     IonHeader,
     IonContent,
-    IonSegment,
-    IonSegmentButton,
     IonToolbar,
     IonLabel,
-    IonIcon
+    IonIcon,
+    IonButton,
+    IonItem
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
+  import Posts from '@/components/Posts'
+  import NewForYou from '@/components/NewForYou'
+  import {
+    ref
+  } from '@vue/reactivity';
 
   export default {
     name: 'MarketPlaceTab',
@@ -42,15 +51,28 @@
       IonHeader,
       IonContent,
       IonPage,
-      IonSegment,
-      IonSegmentButton,
       IonToolbar,
       IonLabel,
       IonIcon,
+      IonButton,
+      IonItem,
 
-      MainHeader
+      MainHeader,
+      Posts,
+      NewForYou
     },
-    setup() {}
+    setup() {
+      let activeSegment = ref('sell')
+
+      function onSegmentChange(ev) {
+        activeSegment.value = ev.detail.value
+      }
+
+      return {
+        onSegmentChange,
+        activeSegment
+      }
+    }
   }
 </script>
 
