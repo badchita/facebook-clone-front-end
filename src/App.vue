@@ -47,6 +47,9 @@
     thumbsUpOutline,
     chatboxOutline,
     arrowRedoOutline,
+    list,
+    createOutline,
+
   } from 'ionicons/icons';
 
   addIcons({
@@ -79,6 +82,8 @@
     'thumbs-up-outline': thumbsUpOutline,
     'chatbox-outline': chatboxOutline,
     'arrow-redo-outline': arrowRedoOutline,
+    'list': list,
+    'create-outline': createOutline
   })
 
   export default defineComponent({
