@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+  <ion-page mode="ios">
     <ion-header>
       <MainHeader :title="'Watch'" />
       <ion-toolbar class="watch-toolbar">
@@ -12,29 +12,8 @@
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-grid class="new-for-you-grid">
-        <ion-row>
-          <ion-col class="new-for-you-title" size="9.5">New for You</ion-col>
-          <ion-col><ion-text>See All (2)</ion-text></ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="1.8">
-            <ion-avatar>
-              <img src="@/assets/images/friend-picture.jpg" />
-            </ion-avatar>
-          </ion-col>
-          <ion-col class="name-col" size="8">
-            <ion-label>Maria Pico and others shared videos.</ion-label>
-          </ion-col>
-          <ion-col>
-            <ion-button fill="clear">
-            <ion-icon slot="icon-only" size="small" name="ellipsis-horizontal"/>
-            </ion-button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-
-       <Posts />
+      <NewForYou />
+      <Posts />
     </ion-content>
   </ion-page>
 </template>
@@ -46,19 +25,13 @@
     IonContent,
     IonSegment,
     IonSegmentButton,
-    IonGrid,
-    IonRow,
-    IonCol,
     IonLabel,
     IonToolbar,
-    IonAvatar,
-    IonIcon,
-    IonText,
-    IonButton
   } from '@ionic/vue';
 
-  import MainHeader from '@/components/MainHeader.vue'
-  import Posts from '@/components/Posts.vue'
+  import MainHeader from '@/components/MainHeader'
+  import Posts from '@/components/Posts'
+  import NewForYou from '@/components/NewForYou'
   import {
     ref
   } from '@vue/reactivity';
@@ -72,17 +45,11 @@
       IonSegment,
       IonSegmentButton,
       IonToolbar,
-      IonGrid,
-      IonRow,
-      IonCol,
       IonLabel,
-      IonAvatar,
-      IonIcon,
-      IonText,
-      IonButton,
 
       MainHeader,
-      Posts
+      Posts,
+      NewForYou,
     },
     setup() {
       const categories = ([{
@@ -100,8 +67,6 @@
           value: 'Gaming'
         }
       ])
-
-      console.log(categories)
 
       let activeSegment = ref('For You')
 

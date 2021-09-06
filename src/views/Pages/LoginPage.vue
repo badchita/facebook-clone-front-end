@@ -1,5 +1,5 @@
 <template>
-    <ion-page>
+    <ion-page mode="ios">
         <ion-header class="ion-no-border">
             <ion-toolbar>
                 <ion-icon name="logo-facebook" />
@@ -26,14 +26,14 @@
                 </ion-item>
             </ion-list>
 
-            <ion-button class="ion-button-login" expand="block" @click="redirectToTabs">Log In</ion-button>
-            <ion-button class="ion-button-forget-password" fill="clear" expand="full">Forgot Password?</ion-button>
-            <ion-button class="ion-button-back" fill="clear" expand="full">Back</ion-button>
+            <ion-button class="ion-button-login"  expand="block" @click="redirectToTabs">Log In</ion-button>
+            <ion-button class="ion-button-forget-password"  fill="clear" expand="full">Forgot Password?</ion-button>
+            <ion-button class="ion-button-back" fill="clear"  expand="full">Back</ion-button>
         </ion-content>
 
         <ion-footer class="ion-no-border">
             <h5><span>OR</span></h5>
-            <ion-button class="ion-button-create-account" expand="block">Create New Account</ion-button>
+            <ion-button class="ion-button-create-account"  expand="block">Create New Account</ion-button>
         </ion-footer>
     </ion-page>
 </template>

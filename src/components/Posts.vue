@@ -1,12 +1,15 @@
 <template>
-    <ion-grid class="posts" v-for="(item,i) in 10" :key="i">
+    <ion-grid class="posts" v-for="(item,i) in data.post_details" :key="i">
         <ion-row class="post-details">
-            <ion-col size="1.8">
-                <ion-avatar><img src="@/assets/images/profile-picture.jpg" /></ion-avatar>
+            <ion-col size="1.7">
+                <ion-avatar><img v-bind:src="item.ProfilePictureURL" /></ion-avatar>
             </ion-col>
-            <ion-col size="9.2" class="post-name">
-                <ion-label class="name">Vr Bachita</ion-label><br />
-                <ion-label class="time">13m
+            <ion-col size="9.3" class="post-name">
+                <ion-label class="name">{{item.FullName}}</ion-label><br />
+                <ion-label class="time" v-if="item.TimeType === 'minutes'">{{item.Time}}m
+                    <ion-icon name="people" />
+                </ion-label>
+                <ion-label class="time" v-else>{{item.Time}}h
                     <ion-icon name="people" />
                 </ion-label>
             </ion-col>
@@ -22,7 +25,7 @@
           </ion-col>
         </ion-row> -->
         <ion-row class="post-image">
-            <img src="@/assets/images/profile-picture.jpg" />
+            <img :src="item.PostImageURL" />
         </ion-row>
         <ion-row class="reacts-comments">
             <ion-col size=".4">
@@ -32,9 +35,9 @@
                 <ion-icon color="danger" name="heart-circle-sharp" />
             </ion-col>
             <ion-col size="7.8">
-                Maria Pico and 33 others
+                Maria Pico and {{item.NumberOfReacts}}
             </ion-col>
-            <ion-col>3 Comments</ion-col>
+            <ion-col>{{item.NumberOfComments}} Comments</ion-col>
         </ion-row>
         <ion-row class="react-comment-share">
             <ion-col>
@@ -68,6 +71,14 @@
         IonIcon,
         IonLabel,
     } from '@ionic/vue';
+    import {
+        reactive
+    } from '@vue/reactivity';
+
+    import profile_picture1 from '@/assets/images/ProfilePictures/profile-picture.jpg'
+    import profile_picture2 from '@/assets/images/ProfilePictures/friend-picture.jpg'
+    import post_image1 from '@/assets/images/Posts/post1.jpg'
+    import post_image2 from '@/assets/images/Posts/post2.jpg'
     export default {
         components: {
             IonGrid,
@@ -78,7 +89,30 @@
             IonLabel,
         },
         setup() {
-            return {}
+            const data = reactive({
+                post_details: [{
+                    FullName: 'Vr Bachita',
+                    Time: '20',
+                    TimeType: 'minutes',
+                    ProfilePictureURL: profile_picture1,
+                    PostImageURL: post_image1,
+                    NumberOfComments: 10,
+                    NumberOfReacts: 2
+                },
+                {
+                    FullName: 'Maria Pico',
+                    Time: '14',
+                    TimeType: 'hours',
+                    ProfilePictureURL: profile_picture2,
+                    PostImageURL: post_image2,
+                    NumberOfComments: 70,
+                    NumberOfReacts: 589
+                }]
+            })
+
+            return {
+                data,
+            }
         }
     }
 </script>

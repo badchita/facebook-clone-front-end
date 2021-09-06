@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+  <ion-page mode="ios">
     <ion-header>
       <MainHeader :title="'facebook'" />
     </ion-header>
@@ -9,7 +9,7 @@
         <ion-row>
           <ion-col size="1.2">
             <ion-avatar>
-              <img src="@/assets/images/profile-picture.jpg" />
+              <img src="@/assets/images/ProfilePictures/profile-picture.jpg" />
             </ion-avatar>
           </ion-col>
           <ion-col>
@@ -54,7 +54,7 @@
           <ion-slides :options="slideOptionStories">
             <ion-slide>
               <ion-card class="create-story" button>
-                <img src="@/assets/images/profile-picture.jpg" />
+                <img src="@/assets/images/ProfilePictures/profile-picture.jpg" />
                 <ion-card-content>
                   <div class="ion-icon-container">
                     <ion-icon name="add-circle" slot="icon-only" size="large" />

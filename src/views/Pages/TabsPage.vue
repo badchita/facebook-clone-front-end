@@ -1,5 +1,5 @@
 <template>
-  <ion-page>
+  <ion-page mode="ios">
     <ion-tabs @ionTabsDidChange="onActive($event)">
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">

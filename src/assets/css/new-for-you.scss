@@ -1,0 +1,24 @@
+.new-for-you-grid {
+    background: $fb-white;
+    margin-bottom: 6px;
+
+    .new-for-you-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    ion-text {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: .1px;
+        color: $fb-blue;
+    }
+
+    .name-col {
+        --ion-grid-column-padding: 10px;
+    }
+
+    ion-icon {
+        color: $fb-grey;
+    }
+}
