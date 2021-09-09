@@ -49,7 +49,7 @@
     arrowRedoOutline,
     list,
     createOutline,
-
+    locationSharp,
   } from 'ionicons/icons';
 
   addIcons({
@@ -83,7 +83,8 @@
     'chatbox-outline': chatboxOutline,
     'arrow-redo-outline': arrowRedoOutline,
     'list': list,
-    'create-outline': createOutline
+    'create-outline': createOutline,
+    'location-sharp': locationSharp,
   })
 
   export default defineComponent({

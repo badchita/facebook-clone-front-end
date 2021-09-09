@@ -21,6 +21,7 @@
     </ion-header>
     <ion-content>
       <NewForYou />
+      <TodaysPick />
       <Posts />
     </ion-content>
   </ion-page>
@@ -40,6 +41,7 @@
 
   import MainHeader from '@/components/MainHeader.vue'
   import Posts from '@/components/Posts'
+  import TodaysPick from '@/components/marketplacetab/TodaysPick'
   import NewForYou from '@/components/NewForYou'
   import {
     ref
@@ -59,7 +61,8 @@
 
       MainHeader,
       Posts,
-      NewForYou
+      NewForYou,
+      TodaysPick
     },
     setup() {
       let activeSegment = ref('sell')
