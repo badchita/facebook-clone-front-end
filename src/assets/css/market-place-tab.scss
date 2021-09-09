@@ -25,9 +25,50 @@ ion-item {
 }
 
 .todays-pick-grid {
-    .title-row {}
+    background: $fb-white;
 
-    .image-row {}
+    .title-row {
+        ion-label {
+            color: $fb-black;
+            font-weight: 700;
+            font-size: 17px;
+        }
 
-    .price-row {}
+        ion-text {
+            margin-left: 2px;
+        }
+
+        .close-seeall-col {
+            ion-icon {
+                margin-left: -10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .image-row {
+        height: 200px;
+
+        ion-col {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+    }
+
+    .price-row {
+        ion-col {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            ion-label {
+                font-size: 15px;
+            }
+        }
+    }
 }

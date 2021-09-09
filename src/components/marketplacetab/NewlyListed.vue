@@ -1,12 +1,12 @@
 <template>
     <ion-grid class="todays-pick-grid">
         <ion-row class="title-row">
-            <ion-col size="8">
-                <ion-label>Today's Picks</ion-label>
+            <ion-col size="9">
+                <ion-label>Newly Listed</ion-label>
             </ion-col>
-            <ion-col>
-                <ion-icon name="location-sharp" color="primary" />
-                <ion-text color="primary">Kabankalan</ion-text>
+            <ion-col class="close-seeall-col">
+                <ion-icon name="close-circle-outline"/>
+                <ion-text color="primary">See All</ion-text>
             </ion-col>
         </ion-row>
 
@@ -18,10 +18,10 @@
 
             <ion-row class="price-row">
                 <ion-col>
-                    <ion-label>₱10 • Notebooktext</ion-label>
+                    <ion-label>₱123 • Flower bouquet</ion-label>
                 </ion-col>
                 <ion-col>
-                    <ion-label>₱250 • Cake</ion-label>
+                    <ion-label>₱170,000 • Vellum Carbon</ion-label>
                 </ion-col>
             </ion-row>
         </div>

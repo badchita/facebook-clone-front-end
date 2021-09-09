@@ -22,7 +22,9 @@
     <ion-content>
       <NewForYou />
       <TodaysPick />
-      <Posts />
+      <AutoPartsAndAccessories />
+      <NewlyListed />
+      <HomeDecor />
     </ion-content>
   </ion-page>
 </template>
@@ -40,9 +42,11 @@
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
-  import Posts from '@/components/Posts'
-  import TodaysPick from '@/components/marketplacetab/TodaysPick'
   import NewForYou from '@/components/NewForYou'
+  import TodaysPick from '@/components/marketplacetab/TodaysPick'
+  import AutoPartsAndAccessories from '@/components/marketplacetab/AutoPartsAndAccessories'
+  import NewlyListed from '@/components/marketplacetab/NewlyListed'
+  import HomeDecor from '@/components/marketplacetab/HomeDecor'
   import {
     ref
   } from '@vue/reactivity';
@@ -60,9 +64,11 @@
       IonItem,
 
       MainHeader,
-      Posts,
+      TodaysPick,
+      AutoPartsAndAccessories,
       NewForYou,
-      TodaysPick
+      NewlyListed,
+      HomeDecor,
     },
     setup() {
       let activeSegment = ref('sell')
