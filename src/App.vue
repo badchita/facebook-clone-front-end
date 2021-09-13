@@ -50,6 +50,8 @@
     list,
     createOutline,
     locationSharp,
+    compass,
+    personAdd,
   } from 'ionicons/icons';
 
   addIcons({
@@ -85,6 +87,8 @@
     'list': list,
     'create-outline': createOutline,
     'location-sharp': locationSharp,
+    'compass': compass,
+    'person-add': personAdd,
   })
 
   export default defineComponent({

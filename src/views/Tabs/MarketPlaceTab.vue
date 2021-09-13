@@ -2,21 +2,23 @@
   <ion-page mode="ios">
     <ion-header>
       <MainHeader :title="'Marketplace'" />
-      <ion-toolbar>
-        <ion-item lines="none">
-          <ion-button expand="block">
-            <ion-icon size="small" name="create-outline" />
-            <ion-label>
-              Sell
-            </ion-label>
-          </ion-button>
-          <ion-button expand="block">
-            <ion-icon name="list" />
-            <ion-label>
-              Categories
-            </ion-label>
-          </ion-button>
-        </ion-item>
+      <ion-toolbar class="marketplace-groups-toolbar">
+        <ion-slides>
+          <ion-slide lines="none">
+            <ion-button expand="block">
+              <ion-icon size="small" name="create-outline" />
+              <ion-label>
+                Sell
+              </ion-label>
+            </ion-button>
+            <ion-button expand="block">
+              <ion-icon size="small" name="list" />
+              <ion-label>
+                Categories
+              </ion-label>
+            </ion-button>
+          </ion-slide>
+        </ion-slides>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -38,7 +40,8 @@
     IonLabel,
     IonIcon,
     IonButton,
-    IonItem
+    IonSlides,
+    IonSlide,
   } from '@ionic/vue';
 
   import MainHeader from '@/components/MainHeader.vue'
@@ -61,7 +64,8 @@
       IonLabel,
       IonIcon,
       IonButton,
-      IonItem,
+      IonSlides,
+      IonSlide,
 
       MainHeader,
       TodaysPick,
@@ -88,4 +92,5 @@
 <style lang="scss" scoped>
   @import '@/assets/css/variables.scss';
   @import '@/assets/css/market-place-tab.scss';
+  @import '@/assets/css/global.scss';
 </style>
