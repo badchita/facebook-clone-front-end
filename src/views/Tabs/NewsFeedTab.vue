@@ -83,49 +83,16 @@
 </template>
 
 <script>
-  import {
-    IonPage,
-    IonHeader,
-    IonContent,
-    IonGrid,
-    IonRow,
-    IonCol,
-    IonAvatar,
-    IonImg,
-    IonButton,
-    IonIcon,
-    IonLabel,
-    IonSlide,
-    IonSlides,
-    IonCard,
-    IonCardContent
-  } from '@ionic/vue';
-
   import MainHeader from '@/components/MainHeader.vue'
   import Posts from '@/components/Posts.vue'
   import {
-    onMounted, ref
+    onMounted,
+    ref
   } from '@vue/runtime-core';
 
   export default {
     name: 'NewsFeedTab',
     components: {
-      IonHeader,
-      IonContent,
-      IonPage,
-      IonGrid,
-      IonRow,
-      IonCol,
-      IonAvatar,
-      IonImg,
-      IonButton,
-      IonIcon,
-      IonLabel,
-      IonSlide,
-      IonSlides,
-      IonCard,
-      IonCardContent,
-
       MainHeader,
       Posts
     },

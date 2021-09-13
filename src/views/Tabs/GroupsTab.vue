@@ -4,7 +4,7 @@
       <MainHeader :title="'Groups'" />
       <ion-toolbar class="marketplace-groups-toolbar">
         <ion-slides>
-          <ion-slide lines="none">
+          <ion-slide>
             <ion-button expand="block">
               <ion-icon size="small" name="people" />
               <ion-label>
@@ -27,39 +27,22 @@
         </ion-slides>
       </ion-toolbar>
     </ion-header>
-    <ion-content :fullscreen="true">
+    <ion-content>
+      <ion-slides>
+        <ion-slide class="group-slide">
+          <ion-row><ion-col><ion-label></ion-label></ion-col></ion-row>
+        </ion-slide>
+      </ion-slides>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-  import {
-    IonPage,
-    IonHeader,
-    IonContent,
-    IonToolbar,
-    IonLabel,
-    IonIcon,
-    IonButton,
-    IonSlides,
-    IonSlide,
-  } from '@ionic/vue';
-
   import MainHeader from '@/components/MainHeader.vue'
 
   export default {
     name: 'GroupsTab',
     components: {
-      IonHeader,
-      IonContent,
-      IonPage,
-      IonToolbar,
-      IonLabel,
-      IonIcon,
-      IonButton,
-      IonSlides,
-      IonSlide,
-
       MainHeader
     }
   }
@@ -67,5 +50,6 @@
 
 <style lang="scss" scoped>
   @import '@/assets/css/variables.scss';
+  @import '@/assets/css/groups-tab.scss';
   @import '@/assets/css/global.scss';
 </style>

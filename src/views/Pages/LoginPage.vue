@@ -26,31 +26,19 @@
                 </ion-item>
             </ion-list>
 
-            <ion-button class="ion-button-login"  expand="block" @click="redirectToTabs">Log In</ion-button>
-            <ion-button class="ion-button-forget-password"  fill="clear" expand="full">Forgot Password?</ion-button>
-            <ion-button class="ion-button-back" fill="clear"  expand="full">Back</ion-button>
+            <ion-button class="ion-button-login" expand="block" @click="redirectToTabs">Log In</ion-button>
+            <ion-button class="ion-button-forget-password" fill="clear" expand="full">Forgot Password?</ion-button>
+            <ion-button class="ion-button-back" fill="clear" expand="full">Back</ion-button>
         </ion-content>
 
         <ion-footer class="ion-no-border">
             <h5><span>OR</span></h5>
-            <ion-button class="ion-button-create-account"  expand="block">Create New Account</ion-button>
+            <ion-button class="ion-button-create-account" expand="block">Create New Account</ion-button>
         </ion-footer>
     </ion-page>
 </template>
 
 <script>
-    import {
-        IonPage,
-        IonHeader,
-        IonToolbar,
-        IonContent,
-        IonIcon,
-        IonInput,
-        IonButton,
-        IonFooter,
-        IonItem,
-        IonList
-    } from '@ionic/vue';
     import {
         ref
     } from '@vue/reactivity';
@@ -59,18 +47,7 @@
     } from 'vue-router';
     export default {
         name: 'LoginPage',
-        components: {
-            IonPage,
-            IonHeader,
-            IonContent,
-            IonToolbar,
-            IonIcon,
-            IonInput,
-            IonButton,
-            IonFooter,
-            IonItem,
-            IonList
-        },
+        components: {},
         setup() {
             const login = ref({
                 email: '',

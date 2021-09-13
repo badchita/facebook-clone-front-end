@@ -5,7 +5,7 @@
                 <ion-label>Auto Parts & Accessories</ion-label>
             </ion-col>
             <ion-col class="close-seeall-col">
-                <ion-icon name="close-circle-outline"/>
+                <ion-icon name="close-circle-outline" />
                 <ion-text color="primary">See All</ion-text>
             </ion-col>
         </ion-row>
@@ -29,23 +29,8 @@
 </template>
 
 <script>
-    import {
-        IonCol,
-        IonGrid,
-        IonIcon,
-        IonLabel,
-        IonRow,
-        IonText
-    } from '@ionic/vue'
     export default {
-        components: {
-            IonGrid,
-            IonRow,
-            IonCol,
-            IonIcon,
-            IonText,
-            IonLabel,
-        },
+        components: {},
         setup() {
             return {}
         }

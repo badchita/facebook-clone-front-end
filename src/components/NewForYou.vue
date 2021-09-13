@@ -25,27 +25,8 @@
 </template>
 
 <script>
-    import {
-        IonAvatar,
-        IonButton,
-        IonCol,
-        IonGrid,
-        IonIcon,
-        IonLabel,
-        IonRow,
-        IonText
-    } from '@ionic/vue'
     export default {
-        components: {
-            IonGrid,
-            IonCol,
-            IonRow,
-            IonLabel,
-            IonAvatar,
-            IonText,
-            IonButton,
-            IonIcon,
-        },
+        components: {},
         setup() {
             return {}
         }

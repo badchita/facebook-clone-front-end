@@ -4,7 +4,7 @@
       <MainHeader :title="'Marketplace'" />
       <ion-toolbar class="marketplace-groups-toolbar">
         <ion-slides>
-          <ion-slide lines="none">
+          <ion-slide>
             <ion-button expand="block">
               <ion-icon size="small" name="create-outline" />
               <ion-label>
@@ -32,18 +32,6 @@
 </template>
 
 <script>
-  import {
-    IonPage,
-    IonHeader,
-    IonContent,
-    IonToolbar,
-    IonLabel,
-    IonIcon,
-    IonButton,
-    IonSlides,
-    IonSlide,
-  } from '@ionic/vue';
-
   import MainHeader from '@/components/MainHeader.vue'
   import NewForYou from '@/components/NewForYou'
   import TodaysPick from '@/components/marketplacetab/TodaysPick'
@@ -57,16 +45,6 @@
   export default {
     name: 'MarketPlaceTab',
     components: {
-      IonHeader,
-      IonContent,
-      IonPage,
-      IonToolbar,
-      IonLabel,
-      IonIcon,
-      IonButton,
-      IonSlides,
-      IonSlide,
-
       MainHeader,
       TodaysPick,
       AutoPartsAndAccessories,

@@ -64,14 +64,6 @@
 
 <script>
     import {
-        IonGrid,
-        IonRow,
-        IonCol,
-        IonAvatar,
-        IonIcon,
-        IonLabel,
-    } from '@ionic/vue';
-    import {
         reactive
     } from '@vue/reactivity';
 
@@ -80,34 +72,28 @@
     import post_image1 from '@/assets/images/Posts/post1.jpg'
     import post_image2 from '@/assets/images/Posts/post2.jpg'
     export default {
-        components: {
-            IonGrid,
-            IonRow,
-            IonCol,
-            IonAvatar,
-            IonIcon,
-            IonLabel,
-        },
+        components: {},
         setup() {
             const data = reactive({
                 post_details: [{
-                    FullName: 'Vr Bachita',
-                    Time: '20',
-                    TimeType: 'minutes',
-                    ProfilePictureURL: profile_picture1,
-                    PostImageURL: post_image1,
-                    NumberOfComments: 10,
-                    NumberOfReacts: 2
-                },
-                {
-                    FullName: 'Maria Pico',
-                    Time: '14',
-                    TimeType: 'hours',
-                    ProfilePictureURL: profile_picture2,
-                    PostImageURL: post_image2,
-                    NumberOfComments: 70,
-                    NumberOfReacts: 589
-                }]
+                        FullName: 'Vr Bachita',
+                        Time: '20',
+                        TimeType: 'minutes',
+                        ProfilePictureURL: profile_picture1,
+                        PostImageURL: post_image1,
+                        NumberOfComments: 10,
+                        NumberOfReacts: 2
+                    },
+                    {
+                        FullName: 'Maria Pico',
+                        Time: '14',
+                        TimeType: 'hours',
+                        ProfilePictureURL: profile_picture2,
+                        PostImageURL: post_image2,
+                        NumberOfComments: 70,
+                        NumberOfReacts: 589
+                    }
+                ]
             })
 
             return {

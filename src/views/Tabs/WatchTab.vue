@@ -19,16 +19,6 @@
 </template>
 
 <script>
-  import {
-    IonPage,
-    IonHeader,
-    IonContent,
-    IonSegment,
-    IonSegmentButton,
-    IonLabel,
-    IonToolbar,
-  } from '@ionic/vue';
-
   import MainHeader from '@/components/MainHeader'
   import Posts from '@/components/Posts'
   import NewForYou from '@/components/NewForYou'
@@ -39,14 +29,6 @@
   export default {
     name: 'WatchTab',
     components: {
-      IonHeader,
-      IonContent,
-      IonPage,
-      IonSegment,
-      IonSegmentButton,
-      IonToolbar,
-      IonLabel,
-
       MainHeader,
       Posts,
       NewForYou,

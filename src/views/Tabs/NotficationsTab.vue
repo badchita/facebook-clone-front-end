@@ -10,11 +10,6 @@
 </template>
 
 <script>
-  import {
-    IonPage,
-    IonHeader,
-    IonContent
-  } from '@ionic/vue';
   import ExploreContainer from '@/components/ExploreContainer.vue';
 
   import MainHeader from '@/components/MainHeader.vue'
@@ -23,9 +18,6 @@
     name: 'NotificationsTab',
     components: {
       ExploreContainer,
-      IonHeader,
-      IonContent,
-      IonPage,
 
       MainHeader
     }

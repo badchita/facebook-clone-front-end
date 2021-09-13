@@ -26,13 +26,6 @@
 </template>
 
 <script>
-    import {
-        IonIcon,
-        IonButton,
-        IonToolbar,
-        IonItem,
-        IonLabel
-    } from '@ionic/vue';
     export default {
         name: 'MainHeader',
         props: {
@@ -41,13 +34,7 @@
                 default: ''
             }
         },
-        components: {
-            IonToolbar,
-            IonItem,
-            IonButton,
-            IonIcon,
-            IonLabel,
-        },
+        components: {},
         setup() {
             return {}
         }
